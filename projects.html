@@ -3,32 +3,137 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projects by Omkar Patil.">
+  <meta name="description" content="Projects by Omkar Patil: underwater vehicles, test automation, optimisation and robotics.">
   <title>Projects | Omkar Patil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">Omkar Patil<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a class="active" href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html">Omkar Patil</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page">
-    <p class="eyebrow">WHAT I'M BUILDING</p>
-    <h1>Projects<span>.</span></h1>
-    <p class="intro">A collection of experiments, ideas, and things I'm working on.</p>
-    <section class="project-card">
-      <div class="status"><span class="status-dot"></span> Work in progress</div>
-      <h2>Projects coming soon</h2>
-      <p>I'm working on a few ideas. I'll add details, demos, and source code here as they take shape.</p>
-    </section>
-    <a class="text-link" href="index.html">← Back home</a>
+  <main>
+    <div class="wrap page-head">
+      <h1>Projects</h1>
+      <p>Underwater vehicles, test-rig automation, optimisation and a few things built for curiosity.</p>
+    </div>
+    <div class="wrap" style="padding-bottom:96px">
+      <h2 class="group-title">Industry and research</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="where">IIT Bombay × Larsen &amp; Toubro<br>From 2021</div>
+          <div>
+            <h3>Underwater ROV for ship-hull inspection</h3>
+            <p>A technology-transfer project between L&amp;T and IIT Bombay, funded under the DST IMPRINT 2 programme, to design a remotely operated vehicle for inspection and surveillance at industrial level.</p><ul class="ticks"><li>Designed a subsea camera hull rated for 50 m operation, with manufacturability in mind.</li><li>Ran CFD drag analysis in ANSYS Fluent on an approximate vehicle model and validated the battery hull with static structural analysis.</li><li>Led fabrication and mentored 5 team members selected from 150+ applicants.</li><li>Vehicle intended for deployment in sea water for ship-hull maintenance.</li></ul>
+            <ul class="tags"><li>ANSYS Fluent</li><li>ANSYS Static Structural</li><li>SolidWorks</li><li>CFD</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">Bajaj Auto<br>2024 to present</div>
+          <div>
+            <h3>IoT monitoring and auto-stop for durability rigs</h3>
+            <p>A monitoring layer for long-running durability tests so rigs stop themselves and people hear about problems immediately.</p><ul class="ticks"><li>Deployed across 6+ rigs, saving about 3,000 hours annually and improving lab throughput by 5 to 6%.</li><li>Added abnormal-stoppage alerts to reduce silent failures and rework.</li><li>Automated reporting workflows, saving 20 man-hours across 30+ reports.</li></ul>
+            <ul class="tags"><li>ESP32</li><li>Python</li><li>Flask</li><li>Streamlit</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">Tata Steel<br>Industrial exposure</div>
+          <div>
+            <h3>Safety and productivity improvement</h3>
+            <p>Studied shop-floor operations to find where automation could remove people from risky man-machine interfaces.</p><ul class="ticks"><li>Identified automation interventions to reduce man-machine interface risks.</li></ul>
+            <ul class="tags"><li>Safety</li><li>Automation</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">IIT Bombay<br>Academic project</div>
+          <div>
+            <h3>Inventory management system</h3>
+            <ul class="ticks"><li>Reduced inventory cost by 13.5%.</li><li>Applied K-means clustering to streamline review cycles.</li></ul>
+            <ul class="tags"><li>Python</li><li>K-means clustering</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">IIT Bombay<br>Academic project</div>
+          <div>
+            <h3>Cooling-channel optimisation in injection molding</h3>
+            <ul class="ticks"><li>Used a Genetic Algorithm to optimise cooling-channel geometry for better thermal performance.</li><li>Applied Particle Swarm Optimization to cut injection molding cycle time through improved channel design.</li></ul>
+            <ul class="tags"><li>Genetic Algorithm</li><li>PSO</li><li>Optimisation</li></ul>
+          </div>
+        </article>
+      </div>
+      <h2 class="group-title">Robotics and student teams</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="where">Matsya 6, IIT Bombay AUV team<br>From 2021</div>
+          <div>
+            <h3>Autonomous Underwater Vehicle: Matsya 6 and swarm</h3>
+            <p>An all-student team building AUVs that localise themselves and complete realistic tasks at AUVSI RoboSub (San Diego) and NIOT-SAVe (Chennai). Guided by Prof. L. Vachhani and Prof. Hemendra Arya.</p><ul class="ticks"><li>Designed and analysed hulls and components in SolidWorks and ANSYS Static Structural; handles achieved a safety factor above two.</li><li>Project Voyager: designed a 3-DOF arm with a replaceable end effector for task-specific use.</li><li>Project Swarm: worked on miniaturised AUVs aiming at robust underwater communication with minimal sensors, thrusters and boards.</li><li>Created assembly animations of Matsya 6 that won 2nd place in the Propulsion System Skills Video category at RoboSub 2021, among 50+ teams from 12 countries.</li></ul>
+            <ul class="tags"><li>SolidWorks</li><li>ANSYS</li><li>Robotics</li><li>Underwater vehicles</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">Institute Technical Summer Project<br>Mar to Aug 2021</div>
+          <div>
+            <h3>Dishwasher robot</h3>
+            <p>A robot that recognises dishes, bowls and glasses with computer vision and runs a cleaning sequence suited to each utensil.</p><ul class="ticks"><li>Built a CNN that identifies the utensil from an image and selects the cleaning action.</li><li>Created a custom dataset with Google Teachable Machine, processed images with OpenCV and trained the network.</li><li>Made the CAD model of the complete system.</li></ul>
+            <ul class="tags"><li>OpenCV</li><li>CNN</li><li>Python</li><li>CAD</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">Season of Coding<br>From May 2022</div>
+          <div>
+            <h3>Deoldify videos</h3>
+            <p>Training a GAN to colourise and restore old black and white images and film footage, aiming for smooth, flicker-free video.</p><ul class="ticks"><li>Learned neural networks, CNNs and GANs, and applied TensorFlow, pandas, NumPy and OpenCV for image work.</li></ul>
+            <ul class="tags"><li>TensorFlow</li><li>GAN</li><li>OpenCV</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">Self project<br>From July 2022</div>
+          <div>
+            <h3>West gunfighter game</h3>
+            <p>A 2D strategic shooting game inspired by the classic western showdown, written from scratch in Python.</p><ul class="ticks"><li>Built the interface with Pygame.</li><li>Includes a multiplayer mode and an endless single-player mode with rising difficulty and scoring.</li></ul>
+            <ul class="tags"><li>Python</li><li>Pygame</li></ul>
+          </div>
+        </article>
+      </div>
+      <h2 class="group-title">Coursework and research</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="where">Structural Materials course<br>Aug 2021</div>
+          <div>
+            <h3>Shape memory alloys for spacecraft and aircraft</h3>
+            <ul class="ticks"><li>Studied how shape memory alloys work and compiled benefits, challenges and future scope.</li><li>Proposed shape memory polymers as an alternative in these applications.</li></ul>
+            <ul class="tags"><li>Smart materials</li></ul>
+          </div>
+        </article>
+        <article class="project">
+          <div class="where">Solid Mechanics Lab<br>Feb to Apr 2022</div>
+          <div>
+            <h3>Student design project: residual strain in welded aluminium</h3>
+            <ul class="ticks"><li>Worked in a team of four to demonstrate uni-axial strain with a slitting method.</li><li>Designed an experiment to show the presence of residual strain in a welded aluminium sample.</li></ul>
+            <ul class="tags"><li>Solid mechanics</li><li>Experiment design</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
   </main>
 
-  <footer><span>© 2026 Omkar Patil</span><span>Made with curiosity.</span></footer>
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Omkar Patil</span>
+      <a href="mailto:omkardpatil23@gmail.com">omkardpatil23@gmail.com</a>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

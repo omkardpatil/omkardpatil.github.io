@@ -3,31 +3,181 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The personal website of Omkar Patil.">
-  <title>Omkar Patil</title>
+  <meta name="description" content="Omkar Patil: mechanical engineer at Bajaj Auto working on durability testing and test automation. IIT Bombay graduate.">
+  <title>Omkar Patil | Mechanical Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">Omkar Patil<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html">Omkar Patil</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="hero">
-    <p class="eyebrow">PERSONAL WEBSITE</p>
-    <h1>Hello, I'm <span>Omkar Patil.</span></h1>
-    <p class="intro">Engineer, curious problem-solver, and builder. I enjoy exploring technology, automation, and ideas that turn into useful things.</p>
-    <div class="actions">
-      <a class="button primary" href="projects.html">Explore my projects <span aria-hidden="true">→</span></a>
-      <a class="button secondary" href="contact.html">Get in touch</a>
-    </div>
-    <p class="note">A small corner of the internet to share what I'm learning and building.</p>
+  <main>
+    <section class="hero wrap band first" style="padding-bottom:0">
+      <h1>Omkar Patil</h1>
+      <p class="role">Mechanical engineer. I break things on purpose, then automate the rigs that do it.</p>
+      <div class="actions">
+        <a class="button solid" href="projects.html">See my projects</a>
+        <a class="button ghost" href="contact.html">Get in touch</a>
+      </div>
+
+      <figure class="curve" style="margin-left:0;margin-right:0;margin-bottom:0">
+        <svg viewBox="0 0 1000 190" role="img" aria-label="A crack growth curve rising slowly and then sharply to a failure point">
+          <g class="grid">
+            <line x1="0" y1="40" x2="1000" y2="40"/><line x1="0" y1="90" x2="1000" y2="90"/><line x1="0" y1="140" x2="1000" y2="140"/>
+          </g>
+          <line class="axis" x1="0" y1="176" x2="1000" y2="176"/>
+          <path class="trace" pathLength="1" d="M0 168 C 260 166, 520 160, 690 142 S 880 84, 950 22"/>
+          <circle class="mark" cx="950" cy="22" r="9"/>
+          <text class="mark-label" x="935" y="14" text-anchor="end">failure</text>
+        </svg>
+        <figcaption>Crack growth over load cycles. Every durability test is a race to this point, or past it.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="about">
+      <div class="wrap about">
+        <figure class="photo" id="photo">
+          <div class="frame">
+            <img id="portrait" src="assets/photo.jpg" alt="Portrait of Omkar Patil" width="720" height="900">
+            <div class="missing">Add your photo as<br>assets/photo.jpg</div>
+          </div>
+          <figcaption>Pune, India</figcaption>
+        </figure>
+        <div>
+          <h2>From underwater robots to test rigs on the shop floor.</h2>
+          <p>I’m a mechanical engineer at Bajaj Auto, where I lead durability testing in R&amp;D. Most of my work sits where hardware meets software: instrumenting rigs, catching failures early, and removing manual effort from long-running tests.</p>
+          <p>I studied Mechanical Engineering at IIT Bombay with a minor in Electrical Engineering. There I spent years on underwater vehicles, from an AUV competing at RoboSub to an ROV built with Larsen &amp; Toubro, and that mix of mechanical design, simulation and electronics still shapes how I work.</p>
+          <p>Away from work: chess, sketching, gardening, and cold-weather treks. I reached the Kedarkantha summit (3810 m) in winter.</p>
+          <dl class="facts">
+            <div><dt>Now</dt><dd>Assistant Manager, R&amp;D Testing at Bajaj Auto (since Aug 2024)</dd></div>
+            <div><dt>Education</dt><dd>B.Tech Mechanical Engineering, minor in Electrical Engineering, IIT Bombay (2020–2024), CGPA 8.2</dd></div>
+            <div><dt>Tools</dt><dd>Python, C/C++, ESP32, Flask, Streamlit, ANSYS, SolidWorks</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="button ghost" href="assets/Omkar_Patil_Resume.pdf">Download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <header><h2>What I do at Bajaj Auto</h2></header>
+        <div class="job">
+          <h3>Assistant Manager, R&amp;D Testing</h3>
+          <p class="meta">Bajaj Auto Ltd. · August 2024 to present</p>
+          <ul class="ticks">
+            <li>Run 160 to 180 durability tests a year while managing a team of 7.</li>
+            <li>Designed and deployed an IoT monitoring and auto-stop system across 6+ rigs, saving about 3,000 hours annually and lifting lab throughput by 5 to 6%.</li>
+            <li>Added abnormal-stoppage alerts so silent failures and rework stop slipping through.</li>
+            <li>Automated report generation, saving 20 man-hours across 30+ reports.</li>
+            <li>Worked with design and CAE teams to diagnose and resolve 8+ field failures.</li>
+            <li>Standardised pre-test preparation and introduced an ownership-based execution model.</li>
+            <li>Led a safety improvement in impact testing setups and received the company-level Safety Kaizen Award.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band dark" id="achievements">
+      <div class="wrap split">
+        <header><h2>Achievements</h2></header>
+        <div>
+          <p class="ledger-group">Recognition</p>
+          <ul class="ledger">
+            <li><span class="src">Bajaj Auto</span><div><strong>Company-level Safety Kaizen Award</strong><p>For a safety improvement initiative on impact testing setups.</p></div></li>
+            <li><span class="src">RoboSub 2021, San Diego</span><div><strong>2nd place, Propulsion System Skills Video</strong><p>Among 50+ teams from 12 countries, for animations showing the assembly of the Matsya 6 AUV.</p></div></li>
+            <li><span class="src">JEE Advanced 2020</span><div><strong>All India Rank 2879</strong><p>Out of roughly 0.24 million candidates.</p></div></li>
+            <li><span class="src">JEE Main 2020</span><div><strong>99.44 percentile</strong><p>Among about 0.8 million candidates.</p></div></li>
+            <li><span class="src">Scholarships</span><div><strong>National Merit-cum-Means Scholarship (2016)</strong><p>Plus State Merit Scholarships across multiple school years.</p></div></li>
+          </ul>
+
+          <p class="ledger-group">Measured impact</p>
+          <ul class="ledger">
+            <li><span class="src">Test automation</span><div><strong>About 3,000 hours saved every year</strong><p>IoT-enabled monitoring and auto-stop on 6+ rigs, with 5 to 6% more lab throughput.</p></div></li>
+            <li><span class="src">Reporting</span><div><strong>20 man-hours saved across 30+ reports</strong><p>Automated the reporting workflow end to end.</p></div></li>
+            <li><span class="src">Field failures</span><div><strong>8+ resolved with design and CAE</strong><p>Root-cause work between testing, design and simulation teams.</p></div></li>
+            <li><span class="src">Inventory study</span><div><strong>13.5% lower inventory cost</strong><p>K-means clustering to streamline review cycles.</p></div></li>
+            <li><span class="src">Underwater team</span><div><strong>Led fabrication and mentored 5 members</strong><p>Selected from 150+ applicants at IIT Bombay.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <header><h2>Selected projects</h2></header>
+        <div>
+          <div class="projects">
+            <article class="project highlight" style="padding-top:0;border-top:0">
+              <div class="where">IIT Bombay × Larsen &amp; Toubro</div>
+              <div>
+                <h3>Underwater ROV for ship-hull inspection</h3>
+                <p>A joint technology-transfer project to inspect and maintain ship hulls in sea water. I worked on hull design, CFD drag analysis and fabrication.</p>
+                <ul class="tags"><li>ANSYS Fluent</li><li>SolidWorks</li><li>CFD</li></ul>
+              </div>
+            </article>
+            <article class="project">
+              <div class="where">Bajaj Auto</div>
+              <div>
+                <h3>IoT monitoring and auto-stop for test rigs</h3>
+                <p>An ESP32-based system that watches long-running durability rigs, stops them on abnormal behaviour and raises alerts.</p>
+                <ul class="tags"><li>ESP32</li><li>Python</li><li>Flask</li></ul>
+              </div>
+            </article>
+            <article class="project">
+              <div class="where">IIT Bombay</div>
+              <div>
+                <h3>Cooling-channel optimisation for injection molding</h3>
+                <p>Genetic Algorithm and Particle Swarm Optimization applied to channel geometry to improve cooling and cut cycle time.</p>
+                <ul class="tags"><li>Genetic Algorithm</li><li>PSO</li></ul>
+              </div>
+            </article>
+          </div>
+          <p class="more"><a class="button ghost" href="projects.html">All projects</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <h2 style="max-width:22ch;margin-bottom:22px">Working on something that needs to survive real life?</h2>
+        <a class="mail" href="mailto:omkardpatil23@gmail.com">omkardpatil23@gmail.com</a>
+      </div>
+    </section>
   </main>
 
-  <footer><span>© <span id="year">2026</span> Omkar Patil</span><span>Made with curiosity.</span></footer>
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Omkar Patil</span>
+      <a href="mailto:omkardpatil23@gmail.com">omkardpatil23@gmail.com</a>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>
+  /* Photo loader: tries a few common file names in /assets, then shows the placeholder. */
+  (function () {
+    var img = document.getElementById("portrait");
+    var box = document.getElementById("photo");
+    var names = ["assets/photo.jpg", "assets/photo.jpeg", "assets/photo.png", "assets/photo.webp"];
+    var i = 0;
+    img.addEventListener("error", function () {
+      i += 1;
+      if (i < names.length) { img.src = names[i]; } else { box.classList.add("no-photo"); }
+    });
+    if (img.complete && img.naturalWidth === 0) { img.dispatchEvent(new Event("error")); }
+  })();
+</script>
 </body>
 </html>
