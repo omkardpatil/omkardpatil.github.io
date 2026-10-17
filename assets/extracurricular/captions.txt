@@ -1,0 +1,8 @@
+# Descriptions for the Extracurriculars gallery. One line per image:
+#   file name - description
+# The extension is optional. Lines starting with # are ignored.
+# Images in this folder that are not listed here still appear, using their file name as the description.
+# Examples (delete the # and write your own):
+# kedarkantha.jpg - Kedarkantha summit trek, 3810 m, winter 2021
+# ncc-parade - NCC year-long course at IIT Bombay
+tiger_ok.jpg - Street photographer: Helps u notice little good things in life
