@@ -1,3 +1,24 @@
-Put your photo here and name it:  photo.jpg
-(photo.jpeg, photo.png and photo.webp also work.)
-Best: portrait orientation (4:5), about 1000 x 1250 px, under 500 KB.
+YOUR PHOTO
+  assets/photo.jpg   (jpeg / png / webp also work)
+
+LOGOS  (assets/logos/)  - any of .png .jpg .webp .svg; transparent PNG or SVG looks best
+  iitb        IIT Bombay
+  lnt         Larsen & Toubro
+  bajaj       Bajaj Auto
+  tatasteel   Tata Steel
+
+PROJECT IMAGES  (assets/projects/)  - wide images (about 1600 x 900) work best
+  rov                 Underwater ROV
+  iot                 IoT monitoring for test rigs
+  tata-steel          Tata Steel safety project
+  inventory           Inventory management
+  cooling-channel     Cooling-channel optimisation
+  auv                 Matsya 6 AUV
+  dishwasher          Dishwasher robot
+  deoldify            Deoldify videos
+  gunfighter          West gunfighter game
+  shape-memory        Shape memory alloys
+  residual-strain     Residual strain project
+
+Example: assets/projects/rov.jpg   or   assets/logos/iitb.png
+Missing files are simply skipped, so add them whenever you like.

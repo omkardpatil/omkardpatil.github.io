@@ -25,23 +25,23 @@
   <main>
     <section class="hero wrap band first" style="padding-bottom:0">
       <h1>Omkar Patil</h1>
-      <p class="role">Mechanical engineer. I break things on purpose, then automate the rigs that do it.</p>
+      <p class="role">Bridging mechanical engineering, automation &amp; software</p>
       <div class="actions">
         <a class="button solid" href="projects.html">See my projects</a>
         <a class="button ghost" href="contact.html">Get in touch</a>
       </div>
 
-      <figure class="curve" style="margin-left:0;margin-right:0;margin-bottom:0">
-        <svg viewBox="0 0 1000 190" role="img" aria-label="A crack growth curve rising slowly and then sharply to a failure point">
-          <g class="grid">
-            <line x1="0" y1="40" x2="1000" y2="40"/><line x1="0" y1="90" x2="1000" y2="90"/><line x1="0" y1="140" x2="1000" y2="140"/>
-          </g>
-          <line class="axis" x1="0" y1="176" x2="1000" y2="176"/>
-          <path class="trace" pathLength="1" d="M0 168 C 260 166, 520 160, 690 142 S 880 84, 950 22"/>
-          <circle class="mark" cx="950" cy="22" r="9"/>
-          <text class="mark-label" x="935" y="14" text-anchor="end">failure</text>
+      <figure class="bridge">
+        <svg viewBox="0 0 1000 150" role="img" aria-label="Two arches joining mechanical engineering, automation and software">
+          <line class="deck" x1="120" y1="130" x2="880" y2="130"/>
+          <path class="arch" pathLength="1" d="M120 130 C 220 -10, 400 -10, 500 130"/>
+          <path class="arch" pathLength="1" d="M500 130 C 600 -10, 780 -10, 880 130"/>
+          <circle class="node" cx="120" cy="130" r="11"/>
+          <circle class="node mid" cx="500" cy="130" r="11"/>
+          <circle class="node" cx="880" cy="130" r="11"/>
         </svg>
-        <figcaption>Crack growth over load cycles. Every durability test is a race to this point, or past it.</figcaption>
+        <div class="labels" aria-hidden="true"><span style="left:12%">Mechanical</span><span style="left:50%">Automation</span><span style="left:88%">Software</span></div>
+        <figcaption>One engineer, three disciplines, built to work as a single system.</figcaption>
       </figure>
     </section>
 
@@ -66,6 +66,7 @@
           </dl>
           <div class="actions">
             <a class="button ghost" href="assets/Omkar_Patil_Resume.pdf">Download resume</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/omkarpatil23/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -75,6 +76,7 @@
       <div class="wrap split">
         <header><h2>What I do at Bajaj Auto</h2></header>
         <div class="job">
+          <span class="logos"><img data-img="assets/logos/bajaj" alt="Bajaj Auto logo"></span>
           <h3>Assistant Manager, R&amp;D Testing</h3>
           <p class="meta">Bajaj Auto Ltd. · August 2024 to present</p>
           <ul class="ticks">
@@ -121,25 +123,25 @@
         <div>
           <div class="projects">
             <article class="project highlight" style="padding-top:0;border-top:0">
-              <div class="where">IIT Bombay × Larsen &amp; Toubro</div>
-              <div>
-                <h3>Underwater ROV for ship-hull inspection</h3>
+              <div class="where"><span class="logos"><img data-img="assets/logos/iitb" alt="IIT Bombay logo"><img data-img="assets/logos/lnt" alt="Larsen & Toubro logo"></span>IIT Bombay × Larsen &amp; Toubro</div>
+          <div><figure class="shot"><img data-img="assets/projects/rov" alt="Underwater ROV for ship-hull inspection" loading="lazy"></figure>
+            <h3>Underwater ROV for ship-hull inspection</h3>
                 <p>A joint technology-transfer project to inspect and maintain ship hulls in sea water. I worked on hull design, CFD drag analysis and fabrication.</p>
                 <ul class="tags"><li>ANSYS Fluent</li><li>SolidWorks</li><li>CFD</li></ul>
               </div>
             </article>
             <article class="project">
-              <div class="where">Bajaj Auto</div>
-              <div>
-                <h3>IoT monitoring and auto-stop for test rigs</h3>
+              <div class="where"><span class="logos"><img data-img="assets/logos/bajaj" alt="Bajaj Auto logo"></span>Bajaj Auto</div>
+          <div><figure class="shot"><img data-img="assets/projects/iot" alt="IoT monitoring and auto-stop for test rigs" loading="lazy"></figure>
+            <h3>IoT monitoring and auto-stop for test rigs</h3>
                 <p>An ESP32-based system that watches long-running durability rigs, stops them on abnormal behaviour and raises alerts.</p>
                 <ul class="tags"><li>ESP32</li><li>Python</li><li>Flask</li></ul>
               </div>
             </article>
             <article class="project">
-              <div class="where">IIT Bombay</div>
-              <div>
-                <h3>Cooling-channel optimisation for injection molding</h3>
+              <div class="where"><span class="logos"><img data-img="assets/logos/iitb" alt="IIT Bombay logo"></span>IIT Bombay</div>
+          <div><figure class="shot"><img data-img="assets/projects/cooling-channel" alt="Cooling-channel optimisation for injection molding" loading="lazy"></figure>
+            <h3>Cooling-channel optimisation for injection molding</h3>
                 <p>Genetic Algorithm and Particle Swarm Optimization applied to channel geometry to improve cooling and cut cycle time.</p>
                 <ul class="tags"><li>Genetic Algorithm</li><li>PSO</li></ul>
               </div>
@@ -154,6 +156,7 @@
       <div class="wrap">
         <h2 style="max-width:22ch;margin-bottom:22px">Working on something that needs to survive real life?</h2>
         <a class="mail" href="mailto:omkardpatil23@gmail.com">omkardpatil23@gmail.com</a>
+        <div class="actions"><a class="button ghost" href="https://www.linkedin.com/in/omkarpatil23/" target="_blank" rel="noopener">LinkedIn</a></div>
       </div>
     </section>
   </main>
@@ -161,7 +164,7 @@
   <footer>
     <div class="wrap">
       <span>© <span id="year">2026</span> Omkar Patil</span>
-      <a href="mailto:omkardpatil23@gmail.com">omkardpatil23@gmail.com</a>
+      <span><a href="mailto:omkardpatil23@gmail.com">omkardpatil23@gmail.com</a> · <a href="https://www.linkedin.com/in/omkarpatil23/" target="_blank" rel="noopener">LinkedIn</a></span>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
@@ -179,5 +182,6 @@
     if (img.complete && img.naturalWidth === 0) { img.dispatchEvent(new Event("error")); }
   })();
 </script>
+<script src="site.js" defer></script>
 </body>
 </html>
